@@ -2,15 +2,15 @@ Rails.application.routes.draw do
   devise_for :admins,controllers:{
     sessions:      'admin/admins/sessions',
     passwords:     'admin/admins/passwords',
-   registrations:  'admin/admins/registrations'
+    registrations:  'admin/admins/registrations'
   }
   devise_for :customers,controllers:{
-  sessions:      'public/customer/sessions',
-  passwords:     'public/customer/passwords',
-  registrations: 'public/customer/registrations'
+    sessions:      'public/customer/sessions',
+    passwords:     'public/customer/passwords',
+    registrations: 'public/customer/registrations'
   }
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-   scope module: :public do
+  scope module: :public do
     root to:'homes#top'
     get 'about' => 'homes#about'
     resources :items, only:[:index, :show]
