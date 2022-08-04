@@ -102,8 +102,6 @@ GEM
     erubi (1.11.0)
     execjs (2.8.1)
     ffi (1.15.5)
-    font-awesome-sass (6.1.2)
-      sassc (~> 2.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
     http-accept (1.7.0)
@@ -295,7 +293,6 @@ DEPENDENCIES
   chromedriver-helper
   coffee-rails (~> 4.2)
   devise
-  font-awesome-sass
   jbuilder (~> 2.5)
   jquery-rails
   kaminari
